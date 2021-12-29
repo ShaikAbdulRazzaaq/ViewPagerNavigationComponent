@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_second_graph"
+    app:startDestination="@id/sixFragment">
+
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.practice.viewpagernavigationcomponent.ThreeFragment"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" />
+    <fragment
+        android:id="@+id/sixFragment"
+        android:name="com.practice.viewpagernavigationcomponent.SixFragment"
+        android:label="fragment_six"
+        tools:layout="@layout/fragment_six" >
+        <action
+            android:id="@+id/action_sixFragment_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+</navigation>
